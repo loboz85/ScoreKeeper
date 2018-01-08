@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightImage">650dp</dimen>
+    <dimen name="widthImage">400dp</dimen>
+    <dimen name="textTeam">24sp</dimen>
+    <dimen name="textPoints">80sp</dimen>
+    <dimen name="textSets">32sp</dimen>
+    <dimen name="points">24sp</dimen>
+    <dimen name="sets">20sp</dimen>
+    <dimen name="reset">24sp</dimen>
+    <dimen name="resetMargin">10dp</dimen>
+    <dimen name="marginStart">20dp</dimen>
+    <dimen name="teamaMarginTop">40dp</dimen>
+    <dimen name="pointsSets">18dp</dimen>
+    <dimen name="teambMarginTop">30dp</dimen>
+    <dimen name="pointsButtonMargin">15dp</dimen>
+    <dimen name="setsButtonMargin">10dp</dimen>
+    <dimen name="pointsMargin">130dp</dimen>
+    <dimen name="setsMargin">40dp</dimen>
+
+</resources>

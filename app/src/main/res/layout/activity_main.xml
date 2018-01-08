@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/widthImage"
+        android:layout_height="@dimen/heightImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/table" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="@dimen/teamaMarginTop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/teamA"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textTeam" />
+
+
+            <Button
+                android:id="@+id/team_a_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pointsButtonMargin"
+                android:background="@android:color/transparent"
+                android:onClick="addOneForTeamA"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textPoints" />
+
+
+            <Button
+                android:id="@+id/team_a_sets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setsButtonMargin"
+                android:background="@android:color/transparent"
+                android:onClick="addSetForTeamA"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSets" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pointsSets"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pointsMargin"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/points" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setsMargin"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/sets"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sets" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="@dimen/teambMarginTop"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/teamB"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textTeam" />
+
+
+            <Button
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pointsButtonMargin"
+                android:background="@android:color/transparent"
+                android:onClick="addOneForTeamB"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textPoints" />
+
+
+            <Button
+                android:id="@+id/team_b_sets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setsButtonMargin"
+                android:background="@android:color/transparent"
+                android:onClick="addSetForTeamB"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSets" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/resetMargin"
+        android:background="@android:color/transparent"
+        android:onClick="resetPoints"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/reset" />
+
+
+</RelativeLayout>
